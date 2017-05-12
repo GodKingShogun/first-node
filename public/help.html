@@ -16,11 +16,10 @@
 <script src=""></script>
 </body>
 </html>
-var lat = response.data.coord.lat;
-var lon = response.data.coord.lon;
-var weatherImgSearch = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lon}&radius=50000&type=shopping_mall&key=${placeId}`;
+var weatherImgSearch = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lon}&radius=50000&type=shopping_mall&key=${placeId}`;
 return axios.get(weatherImgSearch);
 }).then((response) => {
 var imgRef = response.data.results[0].reference;
-var weatherImg = `https://maps.googleapis.com/maps/api/place/photo?maxheight=1600&maxwidth=1600&photoreference=${imgRef}&key=${placeId}`;
-$("body").html(`style='background-img: url(${weatherImg})'`);
+var weatherImg = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/photo?maxheight=1600&maxwidth=1600&photoreference=${imgRef}&key=${placeId}`;
+
+$("body").css("background-image", `url(${weatherImg})`);

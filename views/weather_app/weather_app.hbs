@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="weather_app.css">
 </head>
-<body>
+<body style = 'background-image: url("http://cdn.wallpapersafari.com/83/60/wTpAe7.jpg")'>
 <div class="container-fluid">
   <a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="left">Home</p></a>
   <h1 class="text-center" style="color:white">Today's Forcast</h1>
@@ -25,11 +25,11 @@
       C
     </div>
   </div>
-  <div id="wimg"></div>
-  <button id="conT" align="middle" class="btn btn-primary">Fahrenheit</button>
+  <button id="conT" style="margin-top: 30px" align="middle" class="btn btn-primary">Fahrenheit</button>
 </div>
 <button id="getW" class="btn btn-primary">Get Weather</button>
 </center>
+<div id="error" style="margin-top:50px; color:white"></div>
 <a href="/"><p class="text-primary"  style="font-weight:bolder; font-size:20px" align="right">Home</p></a>
 {{> footer}}
 </div>

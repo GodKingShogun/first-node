@@ -2,24 +2,30 @@ $(document).ready(function () {
   var temp = null;
   var on = false;
   const placeId = "AIzaSyAUYqLqu63L8-9ZpYiIio41pAFuF_2TpbU";
+  const id = "aee2fc94235eab1054e9f605fafbf39f";
+  var lat;
+  var lon;
+
+
+
+  navigator.geolocation.getCurrentPosition((position) => {
+    lat = position.coords.latitude;
+    lon = position.coords.longitude;
+    on = true;
+  });
+
 
 $("#getW").click(function () {
-  const coord = `http://ip-api.com/json`;
-  axios.get(coord).then((response) => {
-    const id = "6b5216c389dc27fe53457d96bc7aae93";
-    var lat = response.data.lat;
-    var lon = response.data.lon;
-    var weatherMap = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&APPID=${id}`;
-    return axios.get(weatherMap);
-  }).then((response) => {
-     temp = response.data.main.temp;
-     var icon = response.data.weather[0].icon;
-     var iconL = `http://openweathermap.org/img/w/${icon}.png`;
+  if (on === true) {
+  var weatherUrl = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${id}/${lat},${lon}?exclude=minutely,hourly,daily,alerts,flags&units=si`
+    axios.get(weatherUrl).then((response) => {
+     console.log(response);
+      temp = response.data.currently.temperature;
      $("#celsius").html(temp);
-     $("#wimg").html(`<img src=${iconL}>`);
    }).catch((e) => {
-   $("#celsius").html(e.message);
+   $("#error").html(e.message);
   });
+}
 });
 
 $("#conT").click(function () {
