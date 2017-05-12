@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{pageTitle}}</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="tic_tac_toe.css">
+</head>
+<body>
+  <div class="container-fluid">
+  <a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="left">Home</p></a>
+  <h1 class="text-center">Tic Tac Toe</h1>
+  <center>
+  <div id="tic-tac-toe">
+  <div id="first-row">
+    <button id="ul" class="btn board"></button>
+    <button id="um" class="btn board"></button>
+    <button id="ur" class="btn board"></button>
+</div>
+  <div id="second-row">
+       <button id="ml" class="btn board"></button>
+       <button id="mm" class="btn board"></button>
+       <button id="mr" class="btn board"></button>
+  </div>
+    <div id="third-row">
+       <button id="ll" class="btn board"></button>
+       <button id="lm" class="btn board"></button>
+       <button id="lr" class="btn board"></button>
+    </div>
+  </div>
+</center>
+   <div id="xoro" class="row">
+     <button id="x" class="col-xs-4" style="background-color:black;color:white">X</button>
+     <p id="or" class="col-xs-4 text-center" style="font-weight:bolder">OR</p>
+     <button id="o" class="col-xs-4" style="background-color:white;color:black">O</button>
+    </div>
+    <p class="text-center" style="font-weight:bolder; font-size:20px" id="x-o">Choose</p>
+    <div id="results" class="well"></div>
+  <button id="play" class="btn btn-info"></button>
+  <a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="right">Home</p></a>
+  {{> footer}}
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="tic_tac_toe.js"></script>
+</body>
+</html>

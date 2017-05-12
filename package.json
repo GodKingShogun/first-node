@@ -1,18 +1,26 @@
 {
-  "name": "node-web-server",
+  "name": "first-web-page",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.13.1",
+    "express": "^4.15.2",
+    "hbs": "^4.0.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GodKingShogun/first-node.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "express": "^4.14.0",
-    "hbs": "^4.0.0",
-    "jquery": "^3.2.1"
-  }
+  "bugs": {
+    "url": "https://github.com/GodKingShogun/first-node/issues"
+  },
+  "homepage": "https://github.com/GodKingShogun/first-node#readme"
 }

@@ -1,0 +1,14 @@
+body {
+background-image: url("http://www.vectorea.com/tvx_uploads/10/2111-neutral-toned-circle-wave-abstract-background.jpg");  
+}
+
+.btn {
+  padding: 25px !important;
+  color:white;
+  background-color: firebrick;
+}
+
+.well {
+  width: 300px;
+  border: 10px solid black;
+}

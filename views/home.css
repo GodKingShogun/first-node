@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Teko');
+.thumbnail {
+  width: 350px;
+  height: 200px;
+}
+
+body {
+background-color: darkred;
+font-family: "teko" ,san-serif;
+color: white;
+}
+
+p1 {
+  font-size: 20px;
+}

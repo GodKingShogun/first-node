@@ -2,10 +2,25 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Help Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{pageTitle}}</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="pomodoro_clock.css">
 </head>
 <body>
-<h1>Help Page</h1>
-<p>Some text here</p>
+<a href="/"><p class="text-primary" align="left">Home</p></a>
+<a href="/"><p class="text-primary" align="right">Home</p></a>
+{{> footer}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src=""></script>
 </body>
 </html>
+var lat = response.data.coord.lat;
+var lon = response.data.coord.lon;
+var weatherImgSearch = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lon}&radius=50000&type=shopping_mall&key=${placeId}`;
+return axios.get(weatherImgSearch);
+}).then((response) => {
+var imgRef = response.data.results[0].reference;
+var weatherImg = `https://maps.googleapis.com/maps/api/place/photo?maxheight=1600&maxwidth=1600&photoreference=${imgRef}&key=${placeId}`;
+$("body").html(`style='background-img: url(${weatherImg})'`);

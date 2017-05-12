@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{pageTitle}}</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+  <div class="container-fluid">
+  <a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="left">Home</p></a>
+  <center>
+  <h1>Calculator</h1>
+  <div class="well"></div>
+  <div id="first-row">
+  <div class="btn-group" role="group" aria-label="first-row">
+  <button id="AC" class="btn">AC</button>
+  <button id="CE" class="btn">CE</button>
+  <button id="divide" class="btn">/</button>
+  <button id="multiply" class="btn">*</button>
+</div>
+</div>
+<div id="second-row">
+  <div class="btn-group" role="group" aria-label="second-row">
+    <button id="seven" class="btn">7</button>
+    <button id="eight" class="btn">8</button>
+    <button id="nine" class="btn">9</button>
+    <button id="subtract" class="btn">-</button>
+    </div>
+  </div>
+  <div id="third-row">
+  <div class="btn-group" role="group" aria-label="third-row">
+    <button id="four" class="btn">4</button>
+    <button id="five" class="btn">5</button>
+    <button id="six" class="btn">6</button>
+    <button id="plus" class="btn">+</button>
+    </div>
+  </div>
+  <div id="fourth-row">
+    <div class="btn-group" role="group" aria-label="fourth-row">
+      <button id="one" class="btn">1</button>
+      <button id="two" class="btn">2</button>
+      <button id="three" class="btn">3</button>
+    </div>
+  </div>
+  <div id="fifth-row">
+    <div class="btn-group" role="group" aria-label="fifth-row">
+      <button id="zero" class="btn">0</button>
+      <button id="decimal" class="btn">.</button>
+      <button id="equal" class="btn">=</button>
+    </div>
+  </div>
+</center>
+<a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="right">Home</p></a>
+{{> footer}}
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{pageTitle}}</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="simon_game.css">
+</head>
+<body>
+<div class="container-fluid">
+<a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="left">Home</p></a>
+<center>
+<div id="topB">
+<div class="btn-group" role="group">
+<button  id="red"></button>
+<button id="blue"></button>
+</div>
+</div>
+<div id="end" class="well" style="background-color:black">
+<h1 class="text-center" style="color:white">Simon</h1>
+<div class= "row">
+<div id="display" class="col-xs-3 well text-center" style="background-color:darkred"></div>
+<button id="start" class="btn btn-primary">Start</button>
+<button id="strict" class="btn btn-danger">Strict</button>
+<button id="on-off" class="btn btn-success">Off</button>
+</div>
+<div class="row">
+<div id="start-dot" class="col-xs-offset-4 col-xs-1 well"></div>
+<div id="strict-dot" class="col-xs-1 well"></div>
+<div id="on-off-dot" class="col-xs-1 well"></div>
+</div>
+</div>
+<div id="bottomB">
+<div class="btn-group" role="group">
+<button id="yellow"></button>
+<button id="green"></button>
+</div>
+</div>
+</center>
+<a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="right">Home</p></a>
+{{> footer}}
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="simon_game.js"></script>
+</body>
+</html>
