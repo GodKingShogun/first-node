@@ -8,22 +8,18 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="weather_app.css">
 </head>
-<body style = 'background-image: url("http://cdn.wallpapersafari.com/83/60/wTpAe7.jpg")'>
-<div class="container-fluid">
+<body>
+<div class="container-fluid" style="font-family:arial,georgia">
   <a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="left">Home</p></a>
-  <h1 class="text-center" style="color:white">Today's Forcast</h1>
+  <h1 class="text-center" style="color:white; font-weight:bolder">Today's Forcast</h1>
   <center>
-  <div class="well" style="width:240px; height:200px">
-    <div class="container">
-  <div id="celsius" class="well temp" style="font-size:12px; width:70px; height:50px">
-  </div>
-    <div class="well temp" style="width:30px; height:50px">
-<i class="fa fa-eercast fa-spin">
-</i>
+  <div class="well" style="width:220px; height:200px; border:5px solid black">
+    <div class="row" align="center">
+  <div id="celsius" class="well temp  col-xs-1" style="font-size:12px; width:80px; height:50px"></div>
+<div class="well temp col-xs-1" style="width:40px; height:50px">
+  <i class="fa fa-eercast fa-spin"></i>
     </div>
-    <div id="convert" class="well temp" style="width:50px; height:50px">
-      C
-    </div>
+    <div id="convert" class="well temp col-xs-1" style="width:50px; height:50px">C</div>
   </div>
   <button id="conT" style="margin-top: 30px" align="middle" class="btn btn-primary">Fahrenheit</button>
 </div>

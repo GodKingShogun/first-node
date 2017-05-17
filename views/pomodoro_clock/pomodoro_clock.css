@@ -1,11 +1,61 @@
-.right-well {
- align:right;
- background-color:red;
-}
 #alert {
   margin-top:50px;
 }
 
+.container-0 {
+  display: flex;
+  height: 500vh;
+  border: 10px solid red;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#subtractW {
+align: right;
+}
+
+#subtractB {
+  align: left;
+}
+
+#addW {
+  justify-content: flex-end;
+}
+
+#addB {
+  justify-content: flex-start;
+}
+
+#break-well {
+  width: 400px;
+  height: 100px;
+  border: 10px solid mistyrose;
+}
+
+#work-well {
+  width: 400px;
+  height: 100px;
+  border: 10px solid mistyrose;
+  text-align: right;
+}
+
+#breakSS {
+  width: 200px;
+  margin-top: 20px;
+}
+
+#workSS {
+  width: 200px;
+  margin-top: 20px;
+}
+
+#alert {
+  width: 800px;
+}
 body {
   background-image: url("https://previews.123rf.com/images/elen1/elen11412/elen1141200043/34754401-rock-abstract-neutral-wall-background-Stock-Photo.jpg");
 }

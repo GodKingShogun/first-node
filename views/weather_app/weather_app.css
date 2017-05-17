@@ -1,11 +1,8 @@
-.container {
-  display: flex;
-
-}
-
 .temp {
-  margin: 2px;
+  margin:5px;
   border: 2px solid black;
 }
 
+body {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/4b/db/f0/4bdbf03132d368303ca95a58d5e66f12.jpg");
 }
