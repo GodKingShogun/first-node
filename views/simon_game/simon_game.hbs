@@ -10,34 +10,35 @@
 <body>
 <div class="container-fluid">
 <a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="left">Home</p></a>
-<center>
-<div id="topB">
-<div class="btn-group" role="group">
-<button  id="red"></button>
-<button id="blue"></button>
+
+  <div id="game">
+  <div class="container" id="topB">
+<button class="item" id="red"></button>
+<button class="item" id="blue"></button>
 </div>
-</div>
+
 <div id="end" class="well" style="background-color:black">
 <h1 class="text-center" style="color:white">Simon</h1>
-<div class= "row">
-<div id="display" class="col-xs-3 well text-center" style="background-color:darkred"></div>
+<div class="container1">
+<div id="display" class="well text-center" style="background-color:darkred"></div>
 <button id="start" class="btn btn-primary">Start</button>
 <button id="strict" class="btn btn-danger">Strict</button>
 <button id="on-off" class="btn btn-success">Off</button>
 </div>
-<div class="row">
-<div id="start-dot" class="col-xs-offset-4 col-xs-1 well"></div>
-<div id="strict-dot" class="col-xs-1 well"></div>
-<div id="on-off-dot" class="col-xs-1 well"></div>
+<div class="container2">
+<div id="start-dot" class="well"></div>
+<div id="strict-dot" class="well"></div>
+<div id="on-off-dot" class="well"></div>
 </div>
 </div>
-<div id="bottomB">
-<div class="btn-group" role="group">
-<button id="yellow"></button>
-<button id="green"></button>
+
+<div class="container" id="bottomB">
+<button class="item" id="yellow"></button>
+<button class="item" id="green"></button>
 </div>
 </div>
-</center>
+</div>
+
 <a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="right">Home</p></a>
 {{> footer}}
 </div>
