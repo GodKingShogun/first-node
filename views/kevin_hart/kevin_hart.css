@@ -1,0 +1,20 @@
+#imageS {
+  border: 20px solid darkred;
+}
+
+ol {
+  color: white;
+}
+
+body {
+  background-image: url("http://backgroundsarchive.com/images/pub/49/49497av0yqku2ki.jpg");
+}
+
+.container-fluid {
+  margin: 0 auto
+}
+
+#facts {
+  width: 50%;
+  margin: auto;
+}

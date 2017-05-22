@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{pageTitle}}</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="kevin_hart.css">
 </head>
-<body style="background-color:ivory; font-family:arial,georgia">
+<body style="font-family:arial,georgia">
 <div class="container-fluid">
 <a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="left">Home</p></a>
 <h1 class="text-center" style="color:darkred; font-weight:bolder">Kevin Hart</h1>
-<center><img class="middle img-responsive" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTY4OTAxMjkxN15BMl5BanBnXkFtZTgwODg5MzYyMTE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="kevin hart smiling at you "></center>
+<center><img id="imageS" class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTY4OTAxMjkxN15BMl5BanBnXkFtZTgwODg5MzYyMTE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="kevin hart smiling at you "></center>
 <h2 class="text-center" style="font-weight:bolder; color:darkred">Five Facts About Kevin Hart</h2>
-<div style="color:darkgreen; font-size:16px">
+<div id="facts" style="font-size:16px">
 <ol>
 <li>The comedian was born in North Philadelphia and raised by his mother, Nancy. He has one older brother, Robert Hart.</li><br>
 <li> Hart worked as a shoe salesman once out of school but quit to pursue a career in comedy full time.</li><br>
@@ -24,5 +25,8 @@
 <p style="color:black" class="text-center">To learn more about this amazing, positive man<a href="https://en.wikipedia.org/wiki/Kevin_Hart" style="font-weight:bolder; font-size:20px"> Click Here </a></p>
 {{> footer}}
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="kevin_hart.js"></script>
 </body>
 </html>

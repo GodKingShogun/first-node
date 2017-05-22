@@ -1,12 +1,10 @@
  body {
-   background-color:darkred;
-   margin: 0;
-   padding: 0;
-/*background-image: url("https://previews.123rf.com/images/ygrek/ygrek1103/ygrek110300030/9103048-Vintage-colored-background-with-layers-of-neutral-colors-and-darker-outside-edges-Stock-Photo.jpg");*/
+   overflow-x: hidden;
+   background-image: url("http://wallpapercave.com/wp/9OYMGcV.jpg");
 }
 
 .container-fluid {
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 #game {
