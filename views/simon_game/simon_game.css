@@ -8,16 +8,18 @@
 }
 
 #game {
-  position: relative;
   width: 50%;
   margin: auto;
 }
 
+#screen {
+width: 50%;
+margin: auto;
+}
 
 #end {
-  position: absolute;
+  position:absolute;
   top: 20%;
-  left: 17%;
   border:5px solid white;
   height:300px;
   width:300px;
@@ -57,8 +59,14 @@
   border-radius: 0 0 250px 0;
 }
 
+.container0 {
+display:flex;
+justify-content: center;
+}
+
 .container {
 display:flex;
+justify-content: center;
 }
 
 

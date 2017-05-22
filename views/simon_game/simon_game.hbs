@@ -10,35 +10,39 @@
 <body>
 <div class="container-fluid">
 <a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="left">Home</p></a>
+<div id="game">
 
-  <div id="game">
-  <div class="container" id="topB">
+<div class="container0" id="topB">
 <button class="item" id="red"></button>
 <button class="item" id="blue"></button>
 </div>
 
-<div id="end" class="well" style="background-color:black">
+<div class="container0" id="bottomB">
+<button class="item" id="yellow"></button>
+<button class="item" id="green"></button>
+</div>
+
+<div id="screen" class="container">
+<div id="end" class="well item" style="background-color:black">
 <h1 class="text-center" style="color:white">Simon</h1>
+
 <div class="container1">
 <div id="display" class="well text-center" style="background-color:darkred"></div>
 <button id="start" class="btn btn-primary">Start</button>
 <button id="strict" class="btn btn-danger">Strict</button>
 <button id="on-off" class="btn btn-success">Off</button>
 </div>
+
 <div class="container2">
 <div id="start-dot" class="well"></div>
 <div id="strict-dot" class="well"></div>
 <div id="on-off-dot" class="well"></div>
 </div>
-</div>
 
-<div class="container" id="bottomB">
-<button class="item" id="yellow"></button>
-<button class="item" id="green"></button>
-</div>
 </div>
 </div>
 
+</div>
 <a href="/"><p class="text-primary" style="font-weight:bolder; font-size:20px" align="right">Home</p></a>
 {{> footer}}
 </div>

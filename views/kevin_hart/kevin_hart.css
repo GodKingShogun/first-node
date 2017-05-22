@@ -18,3 +18,10 @@ body {
   width: 50%;
   margin: auto;
 }
+
+@media only screen and (max-width: 500px) {
+  #facts {
+    width:100%;
+    margin: auto;
+  }
+}
