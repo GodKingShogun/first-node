@@ -19,7 +19,7 @@ margin: auto;
 
 #end {
   position:absolute;
-  top: 20%;
+  top: 19%;
   border:5px solid white;
   height:300px;
   width:300px;
@@ -84,6 +84,22 @@ justify-content: center;
 
 .item {
   flex: 0 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .item {
+    flex: 1 1 auto;
+  }
+
+  #end {
+    position:absolute;
+    top: 25%;
+    border:5px solid white;
+    height:300px;
+    width:300px;
+    border-radius:600px;
+    z-index: 1;
+  }
 }
 
 #display {
