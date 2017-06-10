@@ -14,7 +14,7 @@ $(document).ready(function () {
 
   sendLocation.attr('disabled', 'disabled').text('Sending location ...');
 
-  navigator.geolocation.getCurrentPosition(function (position){
+  navigator.geolocation.getCurrentPosition(function (position) {
   sendLocation.removeAttr('disabled').text('Send location');
       on = true;
       lat = position.coords.latitude;
