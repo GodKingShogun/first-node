@@ -6,13 +6,22 @@ $(document).ready(function () {
   var lat;
   var lon;
 
+  let sendLocation = $('#getL');
+  sendLocation.on('click', function () {
+  if (!navigator.geolocation) {
+    return alert('Geolocation is not supported');
+  }
 
+  sendLocation.attr('disabled', 'disabled').text('Sending location ...');
 
-  navigator.geolocation.getCurrentPosition((position) => {
-    lat = position.coords.latitude;
-    lon = position.coords.longitude;
-    on = true;
+  navigator.geolocation.getCurrentPosition(function (position){
+  sendLocation.removeAttr('disabled').text('Send location');
+      on = true;
+      lat = position.coords.latitude;
+      lon = position.coords.longitude;
   });
+  });
+
 
 
 $("#getW").click(function () {
