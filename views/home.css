@@ -12,30 +12,43 @@ body {
 background-color: darkred;
 font-family: "teko" ,san-serif;
 color: white;
-padding-top: 70px;
+/*padding-top: 70px;*/
 }
 
-
+nav {
+  position: fixed;
+  top: 0;
+  right:0;
+  font-size: 18px;
+  z-index: 3;
+}
 
 p1 {
 font-size: 18px;
 text-align: center;
 }
 
-.skillsContainer {
+ul li {
+  float: left;
+  list-style: square;
+}
+
+
+
+/*.skillsContainer {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   margin-top: 20px;
-}
-
+}*/
+/*
 .skillItem {
   width: 35%;
   flex: 0 0 auto;
-}
+}*/
 
-@media only screen and (min-device-width: 300px) {
+/*@media only screen and (min-device-width: 300px) {
   body {
     background-color: "black";
   }
-}
+}*/
