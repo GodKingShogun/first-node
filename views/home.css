@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Teko');
 
+
 .container-fluid {
   margin: 0 auto;
 }
@@ -28,9 +29,12 @@ font-size: 18px;
 text-align: center;
 }
 
-ul li {
-  float: left;
-  list-style: square;
+
+@media only screen and (min-device-width: 768px) {
+  ul li {
+    float: left;
+    width: 33.33%;
+  }
 }
 
 
